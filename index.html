@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" type= "text/css" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <nav>
+        <ul>
+            <li><a href="#datos-personales">Datos Personales</a></li>
+            <li><a href="#idiomas-informatica">Idioma/Informática</a></li>
+            <li><a href="#formacion-academica">Formación Académica</a></li>
+            <li><a href="#experiencia-laboral">Experiencia Laboral</a></li>
+            <li><a href="#informacion-de-contacto">Información de contacto</a></li>
+        </ul>
+    </nav>
+
+</head>
+<body>
+    <div class="container">
+        <div class="uno" id="foto">
+            <img src="foto/fotocarnet.jpg" alt="foto cv" width="250px" height="300px">
+        </div>
+
+        <div class="dos" id="nombre">
+            <header>
+                <h1>JULIETA HERRERA</h1>
+            </header>
+        </div>
+        <div class="tres" id="personal">
+            <section id="datos-personales">
+                <h2>Datos Personales</h2>
+                <p id="datos"></p>
+                <script class="dp"">
+                    const persona= '{"nacionalidad":"Argentina","numeroDoc":"12.345.678","edad":"30","fechaNac":"8-7-1993","estadoCivil":"Soltera"}';
+                    const obj = JSON.parse(persona);
+                    console.log(obj);
+                    document.getElementById("datos").innerHTML = 
+                    "Nacionalidad: " + obj.nacionalidad +  " " +
+                    "N° documento: " + obj.numeroDoc +  " " +
+                    "Fecha de Nacimiento: " + obj.fechaNac +  " " +
+                    "Edad: " + obj.edad +  " " +
+                    "Estado Civil: " + obj.estadoCivil ;    
+                </script>
+            </section>
+        </div>
+
+        <div class="cuatro" id="conocimientos">
+            <section id="idioma-informatica">
+                <h2>Idiomas/Informática</h2>
+
+                <p>Idioma:</p>
+                <ul>
+                <li>Inglés - Nivel intermedio</li>
+                <li>Alemán - Nivel intermedio</li>
+                </ul>
+                <p>Informática:</p>
+                <ul>
+                <li>Python</li>
+                <li>Git</li>
+                <li>PostgreSQL</li>
+                <li>PowerBI</li>
+                <li>Capacidad de adaptación</li> 
+                <li>Pensamiento analítico</li> 
+                </ul>
+            </section>
+        </div>
+
+        <div class="cinco" id="formacion">
+            <section id="formacion-academica">
+                <h2>Formación Académica</h2>
+                <li>Grado en Ingeniería de Sistemas de Telecomunicación</li>
+                <li>Universidad Politécnica de Madrid</li> 
+                <li>2009-2013</li> 
+                <li>Nota media: 9,0</li>
+            </section>
+        </div>
+
+        <div class="seis" id="laboral">
+            <section id="experiencia-laboral">
+                <h2>Experiencia Laboral</h2>
+                <li>Business Intelligence Analyst</li>
+                <li>BIG Digital</li>
+                <li>Febrero 2016- Actualidad</li>
+                <p>Funciones:</p>
+                <ul>
+                    <li>Consolidé diferentes informes que permitieron la obtención de datos relevantes para el área comercial de la compañía.</li> 
+                    <li>Identifiqué oportunamente patrones de consumo en diferentes unidades de negocio, lo que permitió un cambio de estrategia y aumento de ventas en un 15%.</li>
+                    <li>Centralicé diferentes fuentes de información en una base de consulta para diferentes áreas de la empresa.</li>
+                </ul>
+            </section>
+        </div>
+        
+        <div class="siete" id="info">
+                <footer id="informacion-de-contacto">
+                <h2>Información de contacto</h2>
+                <span class="material-icons">house </span>
+                <p> Calle falsa 123</p>
+                <span class="material-icons">phone</span>
+                <p>(953)11358487</p>
+                <span class="material-icons">email</span>
+                <p><a href="mailto:julieta_herrera@ejemplo.com" target="_blank"> julieta_herrera@ejemplo.com</a></p>
+
+                <p id="btn-1"></p>
+
+                <button type="button" id="hora"> Click Aquí! Y te digo la hora!</button>
+
+                <p id="saludo"></p>
+
+                <button onclick="myFunction()"> ¿Y esto? </button>           
+
+                <p id="adivinanza"></p>
+
+                <button onclick="numFav()"> Adivina..adivinador.. </button>
+
+                <script src="js/funciones.js"></script>
+
+            </body> 
+            </footer>
+        </div>
+    </div>
+
+</html>
