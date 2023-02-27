@@ -1,0 +1,92 @@
+
+
+h1{
+    color: rgb(24, 86, 130);
+    font-family: 'Prata', serif;
+    font-size: 4rem;
+    
+}
+
+h2{
+    font-family: 'Patua One', cursive;
+    font-size: 2rem;
+
+}
+
+p{
+    font-size: 25px;
+
+}
+
+p,footer,ul {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+h2,footer,p {
+    color: rgb(13, 114, 197);
+    font-family: 'Ubuntu Condensed', sans-serif;
+    
+}
+
+section,li,ul {
+    color: rgb(83, 147, 199); ;
+    font-size: 20px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    line-height: 150%;
+}
+
+a  {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: rgb(72, 72, 210);
+    font-size: 20px;
+}
+
+
+.uno {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 400px; 
+}
+
+
+.dos {
+    align-items: center;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    width: 350px;
+    
+}
+
+
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+    background-color: black ;
+    
+}
+
+.container > div {
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px ;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 10fr));
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 50px;
+}
+
+button {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 200px;
+    flex-direction: row;
+}
